@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Go/build artifacts
+backend/learncosmos-backend
+backend/learnweaver-backend
+backend/server
+backend/backfill_embeddings
+*.test
+
+# runtime and local state
+.env
+.env.*
+!.env.example
+*.log
+/tmp/
+tmp/
+test-results/
+playwright-report/
+coverage/
+*.tsbuildinfo
+backend/storage/
+
+# secrets and certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.enc
+
+# OS/editor
+.DS_Store
+# local agent/editor settings
+.claude/
+**/.claude/
+settings.local.json

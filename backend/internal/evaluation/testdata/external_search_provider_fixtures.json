@@ -1,0 +1,163 @@
+[
+  {
+    "id": "youtube-leathercraft-wallet",
+    "provider": "youtube",
+    "query": "가죽공예 카드지갑 새들스티치 패턴 재단 강좌",
+    "search_spec": {
+      "primary_query": "가죽공예 카드지갑 새들스티치 패턴 재단 강좌",
+      "intent": "tutorial",
+      "must_include": ["가죽공예", "카드지갑", "새들스티치"],
+      "nice_to_have": ["패턴", "재단", "바느질", "타공"],
+      "avoid": ["DIY키트", "키트", "완제품", "공방 모집"],
+      "content_types": ["video"],
+      "language": "ko",
+      "stage_role": "core_pattern",
+      "source": "pattern_template"
+    },
+    "candidates": [
+      {
+        "title": "가죽공예 카드지갑 새들스티치 패턴 재단 강좌",
+        "description": "초보자를 위한 카드지갑 패턴, 재단, 타공, 바느질 순서",
+        "content_type": "youtube",
+        "relevant": true
+      },
+      {
+        "title": "가죽공예 카드지갑 DIY키트 완제품 판매 후기",
+        "description": "구매 링크와 키트 구성 소개",
+        "content_type": "youtube",
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "naver-watercolor-landscape-postcard",
+    "provider": "naver_blog",
+    "query": "초보 수채화 풍경 엽서 물조절 번짐 워시 과정",
+    "search_spec": {
+      "primary_query": "초보 수채화 풍경 엽서 물조절 번짐 워시 과정",
+      "intent": "tutorial",
+      "must_include": ["수채화", "물조절", "번짐"],
+      "nice_to_have": ["풍경 엽서", "워시", "붓", "그라데이션"],
+      "avoid": ["오일파스텔", "메이크업", "키트"],
+      "content_types": ["article", "video"],
+      "language": "ko",
+      "stage_role": "first_output",
+      "source": "pattern_template"
+    },
+    "candidates": [
+      {
+        "title": "초보 수채화 풍경 엽서 물조절 번짐 워시 과정",
+        "description": "붓과 물조절로 작은 풍경 엽서를 완성하는 단계별 기록",
+        "content_type": "naver_blog",
+        "relevant": true
+      },
+      {
+        "title": "오일파스텔 수채화 느낌 메이크업 키트 후기",
+        "description": "색조 화장품과 키트 구매 후기",
+        "content_type": "naver_blog",
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "naver-daily-english-conversation",
+    "provider": "naver_blog",
+    "query": "생활 영어 표현 쉐도잉 말하기 연습 루틴",
+    "search_spec": {
+      "primary_query": "생활 영어 표현 쉐도잉 말하기 연습 루틴",
+      "intent": "tutorial",
+      "must_include": ["생활 영어", "쉐도잉", "말하기 연습"],
+      "nice_to_have": ["일상 영어", "영어 회화", "필수 표현", "반복"],
+      "avoid": ["과외", "내신", "토익", "오픽", "영어학원", "성인영어학원", "비즈니스영어", "직장인", "할인", "쿠폰", "멤버십"],
+      "content_types": ["article", "video"],
+      "language": "ko",
+      "stage_role": "core_pattern",
+      "source": "pattern_template"
+    },
+    "candidates": [
+      {
+        "title": "생활 영어 표현 쉐도잉 말하기 연습 루틴",
+        "description": "하루 10분 생활 표현을 듣고 따라 말하는 반복 연습",
+        "content_type": "naver_blog",
+        "relevant": true
+      },
+      {
+        "title": "직장인 비즈니스영어 성인영어학원 오픽 토익 과외",
+        "description": "시험 대비와 학원 상담 모집 안내",
+        "content_type": "naver_blog",
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "youtube-arduino-sensor-project",
+    "provider": "youtube",
+    "query": "아두이노 센서 프로젝트 브레드보드 초보 튜토리얼",
+    "search_spec": {
+      "primary_query": "아두이노 센서 프로젝트 브레드보드 초보 튜토리얼",
+      "intent": "tutorial",
+      "must_include": ["아두이노", "센서 프로젝트", "브레드보드"],
+      "nice_to_have": ["회로", "코드"],
+      "avoid": ["키트", "키트 후기", "특가", "판매"],
+      "content_types": ["article", "video"],
+      "language": "ko",
+      "stage_role": "first_output",
+      "source": "pattern_template"
+    },
+    "candidates": [
+      {
+        "title": "아두이노 센서 프로젝트 브레드보드 회로 연결 초보 튜토리얼",
+        "description": "센서 배선과 코드 업로드를 따라 하는 기초 프로젝트",
+        "content_type": "youtube",
+        "relevant": true
+      },
+      {
+        "title": "아두이노 센서 키트 후기 특가 판매 모음",
+        "description": "쇼핑몰 링크와 제품 리뷰 중심",
+        "content_type": "youtube",
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "youtube-beginner-5k-running",
+    "provider": "youtube",
+    "query": "5km 완주 초보 러닝 훈련 계획 걷기 달리기",
+    "search_spec": {
+      "primary_query": "5km 완주 초보 러닝 훈련 계획 걷기 달리기",
+      "intent": "tutorial",
+      "must_include": ["5km", "초보러너", "완주"],
+      "nice_to_have": ["훈련 계획", "걷기 달리기", "페이스", "루틴", "인터벌"],
+      "avoid": ["다이어트", "살 빼", "칼로리", "챌린지", "런닝머신", "체지방"],
+      "content_types": ["video"],
+      "language": "ko",
+      "stage_role": "integration_practice",
+      "source": "pattern_template"
+    },
+    "candidates": [
+      {
+        "title": "러닝 초보 프로그램 5KM 완주 달리기 루틴",
+        "description": "걷기와 달리기를 섞어 5km를 준비하는 연습법",
+        "content_type": "youtube",
+        "relevant": true
+      },
+      {
+        "title": "살 빼는 러닝머신 칼로리 챌린지 후기",
+        "description": "체중감량 챌린지와 칼로리 소모량 중심",
+        "content_type": "youtube",
+        "relevant": false
+      }
+    ]
+  },
+  {"id":"youtube-home-cafe-latte-setup","provider":"youtube","query":"홈카페 카페라떼 만드는 법 우유거품 기초","search_spec":{"primary_query":"홈카페 카페라떼 만드는 법 우유거품 기초","intent":"tutorial","must_include":["홈카페","카페라떼","우유거품"],"nice_to_have":["라떼 만들기","에스프레소","기초","도구"],"avoid":["카페 창업","머신 광고","원두 판매"],"content_types":["video"],"language":"ko","stage_role":"setup_intro","source":"pattern_template"},"candidates":[{"title":"홈카페 라떼 만들기 우유거품 내는 법 기초 튜토리얼","description":"초보가 에스프레소와 우유거품 도구를 준비하는 방법","content_type":"youtube","relevant":true},{"title":"홈카페 머신 광고 원두 판매 카페 창업 설명회","description":"장비 구매와 창업 상담 중심","content_type":"youtube","relevant":false}]},
+  {"id":"naver-houseplant-repotting-setup","provider":"naver_blog","query":"반려식물 분갈이 흙 화분 배수층 기초","search_spec":{"primary_query":"반려식물 분갈이 흙 화분 배수층 기초","intent":"checklist","must_include":["반려식물","분갈이","배수층"],"nice_to_have":["흙","화분","초보"],"avoid":["식물 판매","화분 쇼핑","광고"],"content_types":["article","video"],"language":"ko","stage_role":"setup_intro","source":"pattern_template"},"candidates":[{"title":"초보 반려식물 분갈이 흙과 배수층 준비 체크리스트","description":"화분, 배양토, 배수층을 준비하는 단계별 방법","content_type":"naver_blog","relevant":true},{"title":"인기 반려식물 판매 화분 쇼핑 광고 모음","description":"식물과 화분 구매 링크 중심","content_type":"naver_blog","relevant":false}]},
+  {"id":"youtube-leathercraft-edge-finish","provider":"youtube","query":"가죽공예 지갑 엣지마감 엣지코트 코바 튜토리얼","search_spec":{"primary_query":"가죽공예 지갑 엣지마감 엣지코트 코바 튜토리얼","intent":"tutorial","must_include":["가죽공예","지갑","엣지마감"],"nice_to_have":["엣지코트","코바","품질 점검"],"avoid":["완제품 판매","공방 모집","ASMR"],"content_types":["video"],"language":"ko","stage_role":"artifact_finish","source":"pattern_template"},"candidates":[{"title":"가죽공예 지갑 엣지마감 엣지코트 코바 처리 튜토리얼","description":"완성 전 품질 점검과 코바 마감 방법","content_type":"youtube","relevant":true},{"title":"가죽공예 지갑 완제품 판매 공방 모집 ASMR","description":"완제품 홍보와 공방 수업 모집","content_type":"youtube","relevant":false}]},
+  {"id":"naver-korean-home-cooking-finish","provider":"naver_blog","query":"집밥 한식 된장찌개 간 맞추기 플레이팅 완성","search_spec":{"primary_query":"집밥 한식 된장찌개 간 맞추기 플레이팅 완성","intent":"tutorial","must_include":["집밥","한식","된장찌개"],"nice_to_have":["간 맞추기","플레이팅","완성"],"avoid":["맛집","식당","배달"],"content_types":["article","video"],"language":"ko","stage_role":"artifact_finish","source":"pattern_template"},"candidates":[{"title":"집밥 한식 된장찌개 간 맞추기와 플레이팅 완성 과정","description":"초보가 된장찌개 맛을 조절하고 한상으로 완성하는 방법","content_type":"naver_blog","relevant":true},{"title":"된장찌개 맛집 식당 배달 후기 모음","description":"지역 맛집과 배달 주문 후기","content_type":"naver_blog","relevant":false}]},
+  {"id":"youtube-watercolor-troubleshooting","provider":"youtube","query":"수채화 물조절 번짐 얼룩 해결 튜토리얼","search_spec":{"primary_query":"수채화 물조절 번짐 얼룩 해결 튜토리얼","intent":"tutorial","must_include":["수채화","물조절","번짐"],"nice_to_have":["얼룩 해결","붓","종이"],"avoid":["오일파스텔","메이크업","키트"],"content_types":["video"],"language":"ko","stage_role":"troubleshooting","source":"pattern_template"},"candidates":[{"title":"수채화 물조절 번짐 얼룩 해결하는 초보 튜토리얼","description":"붓 물양과 종이 상태를 조절해 번짐을 고치는 방법","content_type":"youtube","relevant":true},{"title":"오일파스텔 수채화 느낌 메이크업 키트 추천","description":"화장품과 미술 키트 리뷰","content_type":"youtube","relevant":false}]},
+  {"id":"naver-arduino-troubleshooting","provider":"naver_blog","query":"아두이노 센서 브레드보드 오류 해결 코드 점검","search_spec":{"primary_query":"아두이노 센서 브레드보드 오류 해결 코드 점검","intent":"tutorial","must_include":["아두이노","센서","오류 해결"],"nice_to_have":["브레드보드","코드 점검","회로"],"avoid":["키트","키트 후기","특가","판매"],"content_types":["article","video"],"language":"ko","stage_role":"troubleshooting","source":"pattern_template"},"candidates":[{"title":"아두이노 센서 브레드보드 오류 해결과 코드 점검 방법","description":"회로 연결과 코드 업로드 문제를 차례로 확인하는 글","content_type":"naver_blog","relevant":true},{"title":"아두이노 센서 키트 후기 특가 판매 링크","description":"제품 구성과 쇼핑몰 구매 안내","content_type":"naver_blog","relevant":false}]},
+  {"id":"naver-brunch-serial-publish","provider":"naver_blog","query":"브런치 연재 글 발행 목차 퇴고","search_spec":{"primary_query":"브런치 연재 글 발행 목차 퇴고","intent":"checklist","must_include":["브런치","연재","글 발행"],"nice_to_have":["목차","퇴고","독자"],"avoid":["수익 후기","광고","전자책 판매"],"content_types":["article"],"language":"ko","stage_role":"portfolio_publish","source":"pattern_template"},"candidates":[{"title":"브런치 연재 글 발행 전 목차와 퇴고 체크리스트","description":"연재 글을 독자에게 공개하기 전 점검하는 방법","content_type":"naver_blog","relevant":true},{"title":"브런치 수익 후기 전자책 판매 광고","description":"수익화와 판매 페이지 홍보","content_type":"naver_blog","relevant":false}]},
+  {"id":"youtube-shortform-video-publish","provider":"youtube","query":"숏폼 영상편집 자막 썸네일 업로드 튜토리얼","search_spec":{"primary_query":"숏폼 영상편집 자막 썸네일 업로드 튜토리얼","intent":"tutorial","must_include":["숏폼","쇼츠","영상편집","썸네일"],"nice_to_have":["영상 편집","업로드","자막","컷편집","캡컷"],"avoid":["조회수 수익","부업","광고"],"content_types":["video"],"language":"ko","stage_role":"portfolio_publish","source":"pattern_template"},"candidates":[{"title":"숏폼 영상 편집 자막 썸네일 만들고 업로드하는 튜토리얼","description":"컷편집부터 게시 전 점검까지 따라 하는 영상","content_type":"youtube","relevant":true},{"title":"숏폼 조회수 수익 부업 광고 성공 후기","description":"수익 인증과 광고성 강의 안내","content_type":"youtube","relevant":false}]},
+  {"id":"naver-english-score-exam-article","provider":"naver_blog","query":"토익 영어 시험 문제풀이 오답노트 모의고사 학습법","search_spec":{"primary_query":"토익 영어 시험 문제풀이 오답노트 모의고사 학습법","intent":"tutorial","must_include":["토익","문제풀이","오답노트"],"nice_to_have":["점수 목표","모의고사","학습법"],"avoid":["유학","과외 모집","수강신청","수학","수학학원","학원","학원 광고","편입"],"content_types":["article","video"],"language":"ko","stage_role":"practice_loop","source":"pattern_template"},"candidates":[{"title":"영어 시험 점수 목표를 위한 문제풀이와 오답노트 학습법","description":"모의고사 후 오답을 정리하고 반복하는 방법","content_type":"naver_blog","relevant":true},{"title":"영어 유학 과외 모집 수강신청 안내","description":"학원 수강과 유학 상담 홍보","content_type":"naver_blog","relevant":false}]},
+  {"id":"naver-web-dev-foundation-article","provider":"naver_blog","query":"웹개발 HTML CSS JavaScript DOM 반응형 기초","search_spec":{"primary_query":"웹개발 HTML CSS JavaScript DOM 반응형 기초","intent":"tutorial","must_include":["웹개발","HTML CSS JavaScript","DOM"],"nice_to_have":["반응형","포트폴리오","기초"],"avoid":["학원","코딩학원","과외","채용"],"content_types":["article","video"],"language":"ko","stage_role":"core_pattern","source":"pattern_template"},"candidates":[{"title":"웹개발 HTML CSS JavaScript DOM 반응형 기초 정리","description":"포트폴리오 프로젝트 전 필요한 DOM과 반응형 개념","content_type":"naver_blog","relevant":true},{"title":"코딩학원 웹개발 취업 과외 채용 과정 안내","description":"학원 등록과 취업 연계 홍보","content_type":"naver_blog","relevant":false}]},
+  {"id":"youtube-kpop-choreo-practice-loop","provider":"youtube","query":"케이팝 안무 구간 반복 느리게 배우기 거울모드","search_spec":{"primary_query":"케이팝 안무 구간 반복 느리게 배우기 거울모드","intent":"tutorial","must_include":["안무","느린"],"nice_to_have":["거울모드","반복","댄스 커버","박자"],"avoid":["직캠","무대영상","리액션","다이어트댄스","운동 챌린지"],"content_types":["video"],"language":"ko","stage_role":"practice_loop","source":"pattern_template"},"candidates":[{"title":"[5분마스터] 다영(DAYOUNG) - body 안무 무한연습/안무배우기/거울모드/Mirror Ver.","description":"타임스탬프와 함께 아주 느리게, 조금 느리게, 기본 속도로 안무를 반복 연습하는 영상","content_type":"youtube","relevant":true},{"title":"JENNIE - like JENNIE 안무 거울모드 느린버전 kpop dance tutorial","description":"케이팝 안무를 거울모드와 느린 버전으로 따라 하며 반복할 수 있는 영상","content_type":"youtube","relevant":true},{"title":"케이팝 무대영상 직캠 리액션 모음","description":"안무 설명 없이 무대영상, 직캠, 리액션을 모은 영상","content_type":"youtube","relevant":false}]}
+]

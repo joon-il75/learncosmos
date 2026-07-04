@@ -1,0 +1,19 @@
+# ── Dev용 Dockerfile (Air 핫 리로드) ──────────
+FROM golang:1.23-alpine
+
+# 시스템 패키지
+RUN apk add --no-cache git curl make gcc musl-dev
+
+WORKDIR /app
+
+# Air (핫 리로드 툴) 설치
+RUN go install github.com/air-verse/air@latest
+
+# Go 모듈 캐시 활용
+COPY go.mod go.sum ./
+RUN go mod download
+
+# 소스는 볼륨으로 마운트됨
+EXPOSE 8080
+
+CMD ["air", "-c", ".air.toml"]
