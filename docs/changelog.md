@@ -5,6 +5,14 @@
 
 ---
 
+## 2026-07-11 — 서버 초기화 전 표준 백업 수행
+
+- 서버 초기화/삭제 가능성에 대비해 현재 소스 전체를 Git 백업 커밋 `8a66fd9`로 저장하고 원격 `main`에 푸시했다.
+- `/home/cosmos/archive/learncosmos-standard-backups/20260711-183556/`에 PostgreSQL dump, Redis RDB, 런타임 env, nginx 설정, Git bundle, 로그, 백업 메타데이터를 저장했다.
+- 외부 이동용 압축 파일 `/home/cosmos/archive/learncosmos-standard-backups/20260711-183556.tar.gz`와 SHA-256 체크섬을 생성했다.
+- `npx tsc --noEmit`, `go build ./...`, `git diff --check`, Git bundle verify, `pg_restore --list`, tar 목록 확인을 통과했다.
+- Let’s Encrypt 인증서 경로는 현재 권한/접근 문제로 백업하지 못했으므로 서버 삭제 전 별도 확인이 필요하다.
+
 ## 2026-07-11 — 서버 사양 및 운영 인벤토리 문서화
 
 - 현재 운영 서버의 OS, 커널, CPU, 메모리, 디스크, 런타임 버전, 포트, 주요 서비스 상태를 확인해 `docs/wiki/operations/server-inventory.md`에 정리했다.
