@@ -1,7 +1,7 @@
 # LearnCosmos Wiki Index
 
 상태: active
-최종 업데이트: 2026-07-04
+최종 업데이트: 2026-07-11
 목적: LearnCosmos 지식 허브의 시작점
 
 ---
@@ -38,7 +38,7 @@ docs/wiki/
 
 ### operations
 
-- 아직 세부 운영 문서 없음
+- `operations/server-inventory.md`
 
 ### references
 

@@ -1,9 +1,16 @@
 # LearnCosmos Changelog
 
 상태: active
-최종 업데이트: 2026-07-04
+최종 업데이트: 2026-07-11
 
 ---
+
+## 2026-07-11 — 서버 사양 및 운영 인벤토리 문서화
+
+- 현재 운영 서버의 OS, 커널, CPU, 메모리, 디스크, 런타임 버전, 포트, 주요 서비스 상태를 확인해 `docs/wiki/operations/server-inventory.md`에 정리했다.
+- `learncosmos.co.kr` / `www.learncosmos.co.kr` 기준 IP, nginx 프록시 기준, 프론트 `3001`, 백엔드 `8081`, PostgreSQL/Redis loopback 바인딩 기준을 문서화했다.
+- 루트 디스크 사용량 74%, swap 없음, `9000`/`111` 포트 용도 확인 필요 같은 운영상 주의점을 남겼다.
+- 문서만 변경했으므로 배포/재시작은 하지 않는다.
 
 ## 2026-07-04 — 기본 문서와 작업 루틴 이식
 
