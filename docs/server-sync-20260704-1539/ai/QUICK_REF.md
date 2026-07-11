@@ -123,30 +123,7 @@ LearnCosmos는 사용자-facing 브랜드와 신규 기획 기준이다. 실제 
 문서 동기화
 ```
 
-마감작업 명시 시에는 문서화와 검증을 먼저 끝낸 뒤 `git status`로 범위를 확인한다. Google Drive 동기화는 rclone `Gdrive:` remote를 기본으로 사용한다.
-
-Google Drive 문서 동기화 기본 루틴:
-
-```text
-1. 서버 docs 백업
-2. Drive -> 서버 copy
-3. 서버 -> Drive sync dry-run
-4. 문제가 없으면 서버 -> Drive sync
-5. 최종 dry-run으로 차이 없음 확인
-```
-
-기준 명령:
-
-```bash
-mkdir -p /home/cosmos/archive/docs-sync-backups
-cp -a /home/cosmos/LearnCosmos/docs /home/cosmos/archive/docs-sync-backups/docs-before-drive-pull-$(date +%Y%m%d-%H%M%S)
-rclone copy "Gdrive:LearnCosmos/docs" /home/cosmos/LearnCosmos/docs --progress --drive-export-formats docx
-rclone sync /home/cosmos/LearnCosmos/docs "Gdrive:LearnCosmos/docs" --dry-run --progress
-rclone sync /home/cosmos/LearnCosmos/docs "Gdrive:LearnCosmos/docs" --progress
-rclone sync /home/cosmos/LearnCosmos/docs "Gdrive:LearnCosmos/docs" --dry-run --stats-one-line
-```
-
-`rclone` 설정이 없거나 `Gdrive:`가 동작하지 않으면 커넥터 기반 스냅샷 또는 수동 동기화 필요 상태로 보고하고 임의 경로로 동기화하지 않는다.
+마감작업 명시 시에는 문서화와 검증을 먼저 끝낸 뒤 `git status`로 범위를 확인한다. Google Drive 동기화는 rclone 설정이 없으면 커넥터 기반 동기화 또는 수동 동기화 필요 상태로 보고한다.
 
 ---
 

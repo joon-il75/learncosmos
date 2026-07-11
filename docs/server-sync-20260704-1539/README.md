@@ -135,8 +135,6 @@ Google Drive 문서는 편집·공유용이고, Codex와 배포 작업 기준은
 
 `git commit`, `git push`, Google Drive 문서 동기화는 사용자가 마감작업을 명시했을 때만 실행한다.
 
-Google Drive 문서 동기화는 `Gdrive:LearnCosmos/docs`를 기준으로 하며, 서버 `docs/` 백업 후 `Drive -> 서버 copy -> 서버 -> Drive sync dry-run -> 실제 sync -> 최종 dry-run` 순서로 수행한다. Drive에만 있던 문서가 삭제되지 않도록, 실제 sync 전에 반드시 Drive 내용을 서버로 먼저 내려받는다.
-
 ---
 
 ## 8. 작업 루틴

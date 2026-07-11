@@ -44,6 +44,7 @@ import { chunkCoursesToSystems } from '@/lib/dashboard/groupCoursesToSystems';
 import { useDashboardLoader } from './useDashboardLoader';
 import DashboardBackground from './DashboardBackground';
 import DashboardTodayTaskSection from './DashboardTodayTaskSection';
+import CosmosMobileFirstView from './CosmosMobileFirstView';
 import { useGoalCreation } from './useGoalCreation';
 import { useSystemNavigation } from './useSystemNavigation';
 import { GoalFlowLoadingOverlay } from '@/components/goal-interview/GoalFlowLoadingOverlay';
@@ -614,7 +615,20 @@ function DashboardContent() {
           logoHref="/"
           rightSlot={<LearnerHeaderActions onLogout={handleLogout} copy={learnerHeaderCopy} />}
           contentClassName="!px-0 !pb-0"
+          showSectionSubNav={!isPhoneLayout}
         >
+        {isPhoneLayout ? (
+          <CosmosMobileFirstView
+            courses={visibleCourses}
+            todayTask={todayTask}
+            userName={getDisplayName(user)}
+            isSubmitting={isGoalSubmitting}
+            creationError={goalCreationError}
+            onCreateStar={handleGoalSubmit}
+            onOpenCourse={navigateToCourse}
+            onOpenTask={(href) => router.push(href)}
+          />
+        ) : (
         <main style={{ ...mainStyle, padding: '20px 24px 40px' }}>
           <section style={headerBlockStyle}>
             <p style={heroSubtitleStyle}>{dashboardCopy.heroSubtitle}</p>
@@ -717,6 +731,7 @@ function DashboardContent() {
             </div>
           </section>
         </main>
+        )}
         </LearnerAppShell>
       </div>
     </div>

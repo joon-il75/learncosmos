@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import LeftMainNav from './LeftMainNav';
 import type { Locale } from '@/lib/i18n/locales';
 
@@ -8,13 +9,15 @@ interface MobileMainNavDrawerProps {
   locale?: Locale | string | null;
   title: string;
   onClose: () => void;
+  accountSlot?: ReactNode;
+  immersive?: boolean;
 }
 
-export default function MobileMainNavDrawer({ open, locale, title, onClose }: MobileMainNavDrawerProps) {
+export default function MobileMainNavDrawer({ open, locale, title, onClose, accountSlot, immersive = false }: MobileMainNavDrawerProps) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[80] lg:hidden" role="presentation">
+    <div className={`fixed inset-0 z-[80] ${immersive ? '' : 'lg:hidden'}`} role="presentation">
       <button
         type="button"
         className="absolute inset-0 bg-[#061525]/42 backdrop-blur-[2px]"
@@ -33,6 +36,7 @@ export default function MobileMainNavDrawer({ open, locale, title, onClose }: Mo
             ×
           </button>
         </div>
+        {accountSlot ? <div className="mb-4">{accountSlot}</div> : null}
         <LeftMainNav locale={locale} onNavigate={onClose} />
       </aside>
     </div>

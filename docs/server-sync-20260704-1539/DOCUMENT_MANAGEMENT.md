@@ -266,29 +266,7 @@ Google Drive 문서는 편집·공유용이다. Codex와 배포 기준은 서버
 
 Google Drive 동기화는 문서 변경이 있고 사용자가 마감작업 또는 문서 동기화를 명시했을 때만 수행한다.
 
-기본 remote는 `Gdrive:`이며 대상 경로는 `Gdrive:LearnCosmos/docs`다. 동기화는 삭제 위험을 줄이기 위해 항상 Drive 내용을 서버로 먼저 내려받은 뒤 서버 기준으로 Drive를 맞춘다.
-
-표준 루틴:
-
-```bash
-mkdir -p /home/cosmos/archive/docs-sync-backups
-cp -a /home/cosmos/LearnCosmos/docs /home/cosmos/archive/docs-sync-backups/docs-before-drive-pull-$(date +%Y%m%d-%H%M%S)
-rclone copy "Gdrive:LearnCosmos/docs" /home/cosmos/LearnCosmos/docs --progress --drive-export-formats docx
-rclone sync /home/cosmos/LearnCosmos/docs "Gdrive:LearnCosmos/docs" --dry-run --progress
-rclone sync /home/cosmos/LearnCosmos/docs "Gdrive:LearnCosmos/docs" --progress
-rclone sync /home/cosmos/LearnCosmos/docs "Gdrive:LearnCosmos/docs" --dry-run --stats-one-line
-```
-
-운영 원칙:
-
-```text
-Drive -> 서버 copy 먼저
-서버 -> Drive sync 나중
-sync 전후 dry-run 확인
-서버 docs 백업 필수
-```
-
-`rclone` 설정이 없거나 `Gdrive:`가 동작하지 않으면 임의 경로로 동기화하지 않는다. 이 경우 Google Drive 커넥터 기반 스냅샷 또는 수동 동기화 필요 상태로 보고한다.
+`rclone` 설정이 없으면 임의 경로로 동기화하지 않는다. 이 경우 Google Drive 커넥터 기반 export/import 또는 수동 동기화 필요 상태로 보고한다.
 
 ---
 
